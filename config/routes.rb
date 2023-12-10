@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get'books/new'
   post'books' => 'books#create'
   get'books/edit'
-  get'books/show'
+  get'books/:id' => 'books#show'
 end
