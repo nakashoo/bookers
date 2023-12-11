@@ -1,9 +1,13 @@
-
-  <p>Title</p>
-  <%= @book.title %>
-
-  <p>Body</p>
-  <%= @book.body %>
+<table>
+  <tr>
+    <td><p>Title:</p></td>
+    <td><%= @book.title %></td>
+  </tr>
+  <tr>
+    <td><p>Body:</p></td>
+    <td><%= @book.body %></td>
+  </tr>
+</table>
 
 <br>
 <%= link_to 'Edit',edit_book_path(@book.id) %>|<%= link_to 'Back',books_path %>
